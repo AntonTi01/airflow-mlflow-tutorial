@@ -1,0 +1,32 @@
+MLFLOW
+В папке где есть папка mlflow
+Работа без активации venv
+
+1. export MLFLOW_REGISTRY_URI=mlflow
+2. mlflow server --host localhost --port 5001 --backend-store-uri sqlite:///${MLFLOW_REGISTRY_URI}/mlflow.db --default-artifact-root ${MLFLOW_REGISTRY_URI}
+
+
+AIRFLOW
+
+mkdir /Users/forcemajor01/data_science/work_place/other/airflow
+cd airflow
+source /Users/forcemajor01/data_science/work_place/other/airflow-mlflow-tutorial/myvenv/bin/activate
+export AIRFLOW_HOME=/Users/forcemajor01/data_science/work_place/other/airflow
+airflow db init
+
+Config
+dags_folder = /Users/forcemajor01/data_science/work_place/other/airflow-mlflow-tutorial/dags
+load_examples = False
+[webserver] rbac = True
+airflow users create --username admin --firstname yourname --lastname yourlastname --role Admin --email youremail@example.com
+airflow webserver -p 8080
+
+
+Scheduler
+cd /Users/forcemajor01/data_science/work_place/other/airflow
+source /Users/forcemajor01/data_science/work_place/other/airflow-mlflow-tutorial/myvenv/bin/activate
+export AIRFLOW_HOME=/Users/forcemajor01/data_science/work_place/other/airflow
+airflow scheduler
+
+
+
