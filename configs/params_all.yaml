@@ -1,7 +1,7 @@
 predict:
   SEED: 10
   comments:
-    YOUTUBE_API_KEY: AIzaSyBLU5mFczWyGRHq4HLpm9OzENB05l7RP3w
+    YOUTUBE_API_KEY: YOUTUBE_API_KEY
     count_video: 20
     limit: 30
     maxResults: 100
@@ -22,7 +22,7 @@ train:
     count_max_clusters: 15
     silhouette_metric: euclidean
   comments:
-    YOUTUBE_API_KEY: AIzaSyBLU5mFczWyGRHq4HLpm9OzENB05l7RP3w
+    YOUTUBE_API_KEY: YOUTUBE_API_KEY
     count_video: 50
     limit: 30
     maxResults: 250
