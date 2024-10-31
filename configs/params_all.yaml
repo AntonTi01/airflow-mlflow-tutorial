@@ -1,7 +1,7 @@
 predict:
   SEED: 10
   comments:
-    YOUTUBE_API_KEY: YOUTUBE_API_KEY
+    YOUTUBE_API_KEY: AIzaSyBLU5mFczWyGRHq4HLpm9OzENB05l7RP3w
     count_video: 20
     limit: 30
     maxResults: 100
@@ -22,7 +22,7 @@ train:
     count_max_clusters: 15
     silhouette_metric: euclidean
   comments:
-    YOUTUBE_API_KEY: YOUTUBE_API_KEY
+    YOUTUBE_API_KEY: AIzaSyBLU5mFczWyGRHq4HLpm9OzENB05l7RP3w
     count_video: 50
     limit: 30
     maxResults: 250
@@ -35,7 +35,7 @@ train:
     class_weight: balanced
   model_lr: LogisticRegression
   model_vec: vector_tfidf
-  name_experiment: my_third
+  name_experiment: showcase
   stopwords: russian
   tf_model:
     max_features: 300
